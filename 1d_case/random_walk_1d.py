@@ -27,6 +27,10 @@ for i in range(1, N):
     rod[0][i] = total
 ###
 
+#saving the value as a csv file
+np.savetxt('1d.csv', rod, delimiter = ',')
+###
+
 #ploting
 fig = plt.figure()
 
