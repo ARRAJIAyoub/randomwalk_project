@@ -1,6 +1,4 @@
 import rectangle_util
-#import cercle_util
-#import triangle_util
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -9,11 +7,14 @@ width = 30
 walks = 500
 
 
-
+#the boundary conditions
+#only the upper side is heated 
 f_up = lambda x:-112.5*abs(x/width - 2/3) - 37.5*x/width + 75
 f_down = lambda x:0
 f_left = lambda x:0
 f_right = lambda x:0
+
+###
 # the function to make the random walk
 rectangle = np.full((length + 1,width + 1),0.0) # filling the grid with zeroes
 
@@ -28,8 +29,9 @@ fig = plt.figure()
 
 ax = plt.subplot(111)# look for a tutorial of subplot 
 
-im = ax.matshow(rectangle, interpolation = "gaussian" ,cmap = plt.cm.inferno)#can use cm.plasma or magma but the best is seismic
+im = ax.matshow(rectangle, interpolation = "gaussian" ,cmap = plt.cm.inferno)
 #I will stick for color inferno
+#the gaussian interpolation to give more plausible view
 
 plt.colorbar(im)# to show the color bar (the temperature)
 

@@ -1,5 +1,3 @@
-import rectangle_util
-#import cercle_util
 import triangle_util
 import numpy as np
 from matplotlib import pyplot as plt
