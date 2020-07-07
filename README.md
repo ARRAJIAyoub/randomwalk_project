@@ -10,4 +10,4 @@ the files containing the util_* names are for utile functions used by the show_*
 
 the directory  1d_case contains only one python  file you can run it immediately
 
-every prpgrame will output a colored figure contining the values of the solution of the dirichlet problem with boundary conditions.
+every prpgrame will output a colored figure contining the values of the solution of the dirichlet problem with boundary conditions. and it will output also a csv file that contains the value of every point in the domain.
